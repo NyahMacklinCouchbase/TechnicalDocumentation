@@ -1,0 +1,32 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color:honeydew;
+    font-family: Arial;
+    /* scroll-behavior: smooth; */
+}
+
+nav > ul {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+pre, code {
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    overflow:scroll;
+    /* white-space: normal; */
+}
+
+
+@media (min-width: 700px){
+    body{
+      display: flex;
+    }
+  }
