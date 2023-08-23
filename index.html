@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title> What is a database? </title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>
+            <h1>Database Documentation</h1>
+        </header>
+        <ul>
+            <li><a href="#What_is_data?" class="nav-link">What is data?</a></li>
+            <li><a href="#What_is_a_database?" class="nav-link">What is a database?</a></li>
+            <li><a href="#History_of_databases?" class="nav-link">History of databases?</a></li>
+            <li><a href="#Types_of_Databases?" class="nav-link">Types of Databases?</a></li>
+            <li><a href="#What_is_the_difference?" class="nav-link">What is the difference?</a></li>
+        </ul>
+
+    </nav>
+
+    <main id="main-doc">
+        <section id="What_is_data?" class="main-section">
+            <header>
+                <h2>What is data?</h2>
+            </header>
+            <p> Data is a collection of individual facts or values that we can use to percieve, understand, and analyze
+                about ourselves and the world. (from our incredible, @Leaner0418)</p>
+
+        </section>
+        <section id="What_is_a_database?" class="main-section">
+            <header>
+                <h2>What is a database?</h2>
+            </header>
+            <p> A database an organized collection of data, or structured information"</p>
+        </section>
+        <section id="History_of_databases?" class="main-section">
+            <header>
+                <h2> History of databases?</h2>
+            </header>
+            <p>Databases have evolved dramatically since the late 1960s. We used to have purely relational datases. </p>
+            <p> And now
+                we have dozens of types of databases. </p>
+        </section>
+        <section id="Types_of_Databases?" class="main-section">
+            <header>
+                <h2>Types of Databases?</h2>
+            </header>
+            <ul>
+                <li>Couchbase</li>
+                <li>Oracle</li>
+                <li>MSSQL</li>
+                <li>Mysql</li>
+                <li>SqLite</li>
+                <li>MongoDB</li>
+                <li>PostgresSQL</li>
+                <li>Cassandra</li>
+                <li>Neo4j</li>
+            </ul>
+            <dl>
+                <dt>Relational </dt>
+                <code> //Code snippet for a relational database </code>
+                <dd> Relational databases have a fixed structure for it's data, and are based on tables columns and rows
+                </dd>
+                <dt> Non-Relational(No-SQL)</dt>
+                <pre>
+          <code> 
+// This is a NoSQL code sample from Couchbase (which is a non-relational database company)
+//List the schedule of flights from Boston
+// to San Francisco on JETBLUE
+
+SELECT DISTINCT airline.name, route.schedule
+FROM `travel-sample`.inventory.route
+  JOIN `travel-sample`.inventory.airline
+  ON KEYS route.airlineid
+WHERE route.sourceairport = "BOS"
+AND route.destinationairport = "SFO"
+AND airline.callsign = "JETBLUE";
+          </code>
+          </pre>
+                <dd> NonRelational databases have a structure that can be changed in each entry. <p> No-SQL databases
+                        are also
+                        based on collections
+                        and documents
+                    <p>
+                </dd>
+            </dl>
+            <dt>Hierarchal </dt>
+            <code> //Code snippet for a hierarchal database </code>
+            <dd> Developeed in the 1960s/1970s. <p>Hierarchal databases also look similar to a family tree/organization
+                    chart.</p>
+            </dd>
+            <dt> Object Oriented </dt>
+            <code> //Code snippet for a object oriented database </code>
+            <dd> Store and manage objects and is represented in the form of objects, just like object-oriented
+                programming
+            </dd>
+        </section>
+        <section id="What_is_the_difference?" class="main-section">
+            <header>
+                <h2>What is the difference?</h2>
+            </header>
+            <code> //Code snippet for the difference between relational and non relational databases</code>
+            <p> Relational databases have a relationship.</p>
+            <p> They also work with structured data and are table and row
+                oriented.
+            </p>
+            <p> Non-relational databases (No-SQL - not only SQL) have the ability to store large amounts of data in a
+                less
+                structured way. </p>
+            <p> They can also be schema free or schema flexible. </p>
+        </section>
+
+
+
+    </main>
+</body>
+
+</html>
